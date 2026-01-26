@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day 2 - Variables</title>
+  </head>
+
+  <body>
+    <h1 id="message">Clicks: 0</h1>
+
+    <button id="btn">Click me</button>
+
+    <script>
+      let count = 0;
+
+      const button = document.getElementById("btn");
+      const message = document.getElementById("message");
+
+      button.addEventListener("click", function () {
+        count = count + 1;
+        message.innerText = "Clicks: " + count;
+      });
+    </script>
+  </body>
+</html>
