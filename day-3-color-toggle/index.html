@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day 3 - Color Toggle</title>
+  </head>
+
+  <body>
+    <h1 id="text">Color: White</h1>
+
+    <button id="btn">Change Color</button>
+
+    <script>
+      let isWhite = true;
+
+      const button = document.getElementById("btn");
+      const text = document.getElementById("text");
+
+      button.addEventListener("click", function () {
+        if (isWhite === true) {
+          document.body.style.backgroundColor = "black";
+          text.innerText = "Color: Black";
+          text.style.color = "white";
+          isWhite = false;
+        } else {
+          document.body.style.backgroundColor = "white";
+          text.innerText = "Color: White";
+          text.style.color = "black";
+          isWhite = true;
+        }
+      });
+    </script>
+  </body>
+</html>
